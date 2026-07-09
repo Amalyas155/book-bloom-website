@@ -89,7 +89,7 @@ Future versions of Book Bloom may include:
 ---
 ---
 
-## 👩‍💻 Credits
+## Credits
 
 **Designed and Developed by Amal Yasser**
 
