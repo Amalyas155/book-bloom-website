@@ -1,7 +1,7 @@
 #  Book Bloom
 
-![Book Bloom Homepage](<img width="1145" height="553" alt="Screenshot 2026-07-09 161312" src="https://github.com/user-attachments/assets/2ff16194-17e3-40e8-9c30-29450f4b8608" />
-)
+![Book Bloom Homepage]
+<img width="1145" height="553" alt="Screenshot 2026-07-09 161312" src="https://github.com/user-attachments/assets/481de9f9-714a-48f9-aaed-5abbe9994ad1" />
 
 Book Bloom is a responsive website that helps readers discover books from different categories. It provides concise summaries and highlights the key learning outcomes of each book, making it easier for users to understand a book's value before deciding to read or purchase it.
 
