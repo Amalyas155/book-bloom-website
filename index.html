@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Bloom💜</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff7fb;
+      color: #3d2a4d;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #8b5fbf, #d96ba8);
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h2 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 65vh;
+      background: linear-gradient(135deg, #8b5fbf, #d96ba8);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 8%;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 780px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 30px;
+      background: #f3c4dc;
+      color: #3d2a4d;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    h2 {
+      color: #7b3fb2;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .category-box {
+      max-width: 850px;
+      margin: 22px auto;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 5px 18px rgba(123, 63, 178, 0.15);
+      overflow: hidden;
+    }
+
+    summary {
+      padding: 22px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #5d3680;
+      cursor: pointer;
+      background: #f5e6ff;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::before {
+      content: "▶ ";
+      color: #7b3fb2;
+    }
+
+    details[open] summary::before {
+      content: "▼ ";
+    }
+
+    .book-card {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 28px;
+      text-align: left;
+    }
+
+    .book-card img {
+      width: 170px;
+      height: 230px;
+      object-fit: contain;
+      display: block;
+      border-radius: 12px;
+      background-color: white;
+      padding: 5px;
+      flex-shrink: 0;
+    }
+
+    .book-card h3 {
+      color: #7b3fb2;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .book-card p {
+      font-size: 16px;
+      max-width: 520px;
+    }
+
+    .book-card h4 {
+      color: #5d3680;
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+
+    .book-card ul {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+
+    .book-card li {
+      margin-bottom: 5px;
+    }
+
+    .quote {
+      background: linear-gradient(90deg, #8b5fbf, #d96ba8);
+      color: white;
+      font-size: 24px;
+      font-style: italic;
+    }
+
+    .contact {
+      background: #f5e6ff;
+    }
+
+    footer {
+      background: #5d3680;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 6px;
+        display: inline-block;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .book-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .book-card img {
+        width: 200px;
+        max-width: 90%;
+      }
+
+      .book-card ul {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Book Bloom💜</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#categories">Categories</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <div>
+      <h1>Book Bloom💜</h1>
+      <p>Discover meaningful books in engineering, business, medicine, and self-development.</p>
+      <a href="#categories" class="btn">Explore Categories</a>
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <h2>About This Website</h2>
+    <p>
+      Book Bloom is a reading website for people who enjoy learning and exploring useful books.
+      It helps readers understand what each book offers before choosing or purchasing it.
+    </p>
+  </section>
+
+  <section id="categories">
+    <h2>Book Categories</h2>
+
+    <details class="category-box" open>
+      <summary>Engineering</summary>
+      <div class="book-card">
+        <img src="book3.jpg" alt="Electrical Engineers book">
+        <div>
+          <h3>Standard Handbook for Electrical Engineers</h3>
+          <p>A comprehensive reference covering essential concepts and practical applications in electrical engineering.</p>
+
+          <h4>What You’ll Learn:</h4>
+          <ul>
+            <li>Understand key electrical engineering concepts.</li>
+            <li>Explore practical engineering applications.</li>
+            <li>Improve technical problem-solving skills.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="category-box">
+      <summary>Business</summary>
+      <div class="book-card">
+        <img src="book2.jpg" alt="The Psychology of Money book">
+        <div>
+          <h3>The Psychology of Money</h3>
+          <p>Explore how emotions and behavior shape financial decisions and long-term wealth.</p>
+
+          <h4>What You’ll Learn:</h4>
+          <ul>
+            <li>Make smarter financial decisions.</li>
+            <li>Understand the psychology behind money.</li>
+            <li>Build a long-term financial mindset.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="category-box">
+      <summary>Medicine</summary>
+      <div class="book-card">
+        <img src="book4.jpg" alt="Medical Terminology book">
+        <div>
+          <h3>Medical Terminology</h3>
+          <p>Build a strong foundation in medical vocabulary used by healthcare professionals.</p>
+
+          <h4>What You’ll Learn:</h4>
+          <ul>
+            <li>Understand common medical terms.</li>
+            <li>Improve communication in healthcare settings.</li>
+            <li>Build a foundation for medical studies.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="category-box">
+      <summary>Self-Development</summary>
+      <div class="book-card">
+        <img src="book1.jpg" alt="Atomic Habits book">
+        <div>
+          <h3>Atomic Habits</h3>
+          <p>Learn how small daily habits can lead to remarkable personal growth and lasting success.</p>
+
+          <h4>What You’ll Learn:</h4>
+          <ul>
+            <li>Build positive habits that last.</li>
+            <li>Break unhealthy routines.</li>
+            <li>Improve productivity and self-discipline.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+  </section>
+
+  <section class="quote">
+    <p>“Reading is the gateway to knowledge, creativity, and endless possibilities.”</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: contact@bookbloom.com</p>
+    <p>Instagram: @book_bloom_byamal</p>
+  </section>
+
+  <footer style="text-align:center; padding:20px; margin-top:40px; background:#f8f0ff; color:#666; font-size:15px;">
+    <p>© 2026 Book Bloom. All Rights Reserved.</p>
+    <p>Designed & Developed by <strong>Amal Yasser</strong> 💜</p>
+  </footer>
+
+</body>
+</html>
