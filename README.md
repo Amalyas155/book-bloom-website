@@ -91,10 +91,12 @@ Future versions of Book Bloom may include:
 
 ## 👩‍💻 Credits
 
-**Designed and Developed by** 
-**Amal Yasser
+**Designed and Developed by**
+
+**Amal Yasser**
+
 Computer and Network Engineering Student
-University of Jeddah**
+University of Jeddah
 
 
 ---
