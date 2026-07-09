@@ -87,5 +87,18 @@ Future versions of Book Bloom may include:
 - More book categories
 
 ---
+---
+
+## 👩‍💻 Credits
+
+**Designed and Developed by** 
+**Amal Yasser
+Computer and Network Engineering Student
+University of Jeddah**
+
+
+---
+
+Thank you for visiting the **Book Bloom** project! 📚
 
 Thank you for visiting the **Book Bloom** project! 
