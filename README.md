@@ -102,4 +102,3 @@ University of Jeddah**
 
 Thank you for visiting the **Book Bloom** project! 📚
 
-Thank you for visiting the **Book Bloom** project! 
